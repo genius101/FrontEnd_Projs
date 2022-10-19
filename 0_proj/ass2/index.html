@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Attention Grader: I havent been feeling fine this week, suffered from Malaria and Typhiod. I am modifying this work to be okay for the Week 3 Assignment so I can submit the assignment before it expires. I should be fully healthy by week 4 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <a class="logo" href="#">Jibola<span>MrTech</span></a>
+
+          <img
+            id="mobile-cta"
+            class="mobile-menu"
+            src="css/img/menu.svg"
+            alt="Open navigation"
+          />
+          <nav>
+            <img
+              id="mobile-exit"
+              class="mobile-menu-exit"
+              src="css/img/exit.svg"
+              alt="Close navigation"
+            />
+            <ul class="primary-nav">
+              <li class="current"><a href="#">Home</a></li>
+              <li><a href="services.html" target="_blank">Services</a></li>
+              <li><a href="about.html" target="_blank">About Me</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+              <li><a href="contact.html" target="_blank">Contact</a></li>
+              <li class="go-premium-cta">
+                <a
+                  href="https://github.com/genius101"
+                  target="_blank"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="left-col">
+            <p class="subhead">Hi my name is Habeeb Ejio</p>
+            <h1>CodeName: Genius101</h1>
+            <div>
+              <h4>
+                I am a FrontEnd Web Developer with more than 4 months of active
+                Practice
+              </h4>
+              <h5>You can reach me via email: habibejio@hotmail.com</h5>
+            </div>
+          </div>
+          <img src="css/img/pics.jpeg" class="hero-img" />
+        </div>
+      </section>
+
+      <section class="features-section">
+        <div class="container">
+          <ul class="features-list" id="services">
+            <li>FrontEnd Web Development</li>
+            <li>System Administration</li>
+            <li>DevOps</li>
+            <li>Product Support Engineer</li>
+          </ul>
+
+          <img src="css/img/services.webp" />
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact-left">
+            <h2>Contact</h2>
+
+            <form action="">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+
+              <input
+                type="submit"
+                class="send-message-cta"
+                value="Send Message"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p style="text-align: center">&copy 2022 Genius101 Creation</p>
+    </footer>
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
