@@ -1,0 +1,17 @@
+body {
+    background-color: blue;
+    color: aliceblue;
+}
+
+@media screen and (max-width:900px) {
+    body {
+        background-color: yellow;
+        color: aliceblue;
+    }  
+}
+@media screen and (max-width:600px) and (min-width:400px) {
+    body {
+        background-color: green;
+        color: aliceblue;
+    }  
+}
