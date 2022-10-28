@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    width: 25%;
+    background-color: gray;
+    padding: 20px;
+    border: 1px solid black;
+    float: left;
+}
+
+@media screen and (max-width:900px){
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    .column {
+        width: 100%;
+    }
+}

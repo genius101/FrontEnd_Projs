@@ -1,0 +1,9 @@
+body {
+    background-color: yellow;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: deeppink;
+    }
+}
