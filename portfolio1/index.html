@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website 1</title>
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 <body>
     <div class="navbar">
         <div class="container">
-            <a href="#">Remember<span>That</span></a>
+            <a class="logo" href="#">Remember<span>That</span></a>
 
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
@@ -50,7 +51,7 @@
 
     <section class="features-section">
         <div class="container">
-            <ul>
+            <ul class="features-list">
                 <li>Unlimited Tasks</li>
                 <li>SMS Task Reminders</li>
                 <li>Confetti Explosions upon Task Completions</li>
@@ -59,7 +60,50 @@
                 <li>Other awesome features</li>
             </ul>
 
-            <img src="images/holding-phone.jpg" alt="">
+            <img src="images/holding-phone.jpg" alt="Man Holding Phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolores!</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolores!</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolores!</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>
         </div>
     </section>
 </body>
