@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.container img {
+  margin: 3em auto;
+  width: 20%;
+  display: block;
+}
+.container .cool {
+  cursor: pointer;
+}
+.container .hid {
+  display: none;
+}
+
+.magic {
+  background: gold;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
