@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: greenyellow;
+}
+main {
+    color: blueviolet;
+    text-align: center;
+}
+h1 {
+    padding: 1em 2em;
+}
+form {
+    
+    input {
+        width: 30%;
+        border: 0.1em solid blue;
+        padding: 1em;
+        background: gray;
+        // margin-left: 37.5%;
+        // margin-right:37.5%;
+        width: 25%;
+        border-radius: 10em;
+        margin: 1em 37.5%;
+
+    }
+
+    label {
+        margin-bottom: 1em;
+    }
+
+    #submit {
+        background: blue;
+        font-weight: bolder;
+        font-size: 1em;
+        // width: 12em;
+        cursor: pointer;
+    }
+}
