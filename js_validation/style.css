@@ -15,8 +15,12 @@ main {
 
 h1 {
   padding: 1em 2em;
+  cursor: pointer;
 }
 
+form {
+  display: none;
+}
 form input {
   width: 30%;
   border: 0.1em solid blue;
@@ -34,4 +38,15 @@ form #submit {
   font-weight: bolder;
   font-size: 1em;
   cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0.5em;
+  right: 45%;
+}
+
+.register {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

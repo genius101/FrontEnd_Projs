@@ -13,8 +13,11 @@ main {
 }
 h1 {
     padding: 1em 2em;
+    cursor: pointer;
 }
 form {
+
+    display: none;
     
     input {
         width: 30%;
@@ -40,4 +43,17 @@ form {
         // width: 12em;
         cursor: pointer;
     }
+    
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0.5em;
+    right: 45%;
+    
+}
+
+.register {
+    display: block;
 }
