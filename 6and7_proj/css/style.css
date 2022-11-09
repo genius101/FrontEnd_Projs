@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #734b6d;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
+}
+
+img {
+  height: 50vh;
+}
+
+.container img {
+  position: relative;
+  display: block;
+  margin: 5em auto;
+  width: 300px;
+}
+
+.image1 {
+  border-radius: 2em;
+  background-image: none;
+}
+
+#left {
+  position: absolute;
+  left: 0;
+  bottom: 35%;
+  width: 5em;
+  cursor: pointer;
+  border: none;
+}
+
+#right {
+  position: absolute;
+  right: 0;
+  bottom: 35%;
+  width: 5em;
+  cursor: pointer;
+  border: none;
+}
+
+.appear {
+  border: 9px solid black;
+}/*# sourceMappingURL=style.css.map */
