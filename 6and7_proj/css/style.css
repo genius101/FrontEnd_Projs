@@ -19,7 +19,6 @@ img {
 
 .container img {
   position: relative;
-  display: block;
   margin: 5em auto;
   width: 300px;
 }
@@ -27,6 +26,7 @@ img {
 .image1 {
   border-radius: 2em;
   background-image: none;
+  display: block;
 }
 
 #left {
@@ -48,5 +48,5 @@ img {
 }
 
 .appear {
-  border: 9px solid black;
+  left: 40%;
 }/*# sourceMappingURL=style.css.map */
