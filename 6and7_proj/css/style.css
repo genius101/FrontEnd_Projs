@@ -5,9 +5,9 @@
 }
 
 .container {
+  background: #734b6d;
   width: 100%;
   height: 100vh;
-  background: #734b6d;
   display: block;
   align-items: center;
   justify-content: center;
