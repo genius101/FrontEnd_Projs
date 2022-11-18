@@ -45,6 +45,41 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #111;
   overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.btn {
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+.btn i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+}
+.btn:hover {
+  background: var(--memory);
+}
+
+.heading {
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2666666667);
+  color: #fff;
+}
+.heading span {
+  color: var(--memory);
 }
 
 header {
@@ -111,20 +146,74 @@ header .navbar ul li a:hover {
   display: none;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+.home h3 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.home h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+.home h1 span {
+  color: var(--memory);
+}
+.home p {
+  color: #eee;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.about .row .info {
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+.about .row .counter {
+  flex: 1 1 48rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
+  }
+  .home {
+    padding: 1rem 4rem;
   }
 }
 @media (max-width: 991px) {
   header {
     left: -120%;
   }
-  header .toggle {
+  header.toggle {
     left: 0%;
   }
   #menu {
     display: block;
+  }
+  body {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
   }
 }
 @media (max-width: 400px) {
