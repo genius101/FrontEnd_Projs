@@ -189,6 +189,18 @@ header {
             flex:1 1 48rem;
             padding: 2rem 1rem;
             padding-left: 6rem;
+
+            h3 {
+                font-size: 2rem;
+                color: var(--memory);
+                padding: 1rem 0;
+                font-weight: normal;
+
+                span {
+                    color: #eee;
+                    padding: 0 .5rem;
+                }
+            }
         }
 
         .counter {
@@ -197,9 +209,182 @@ header {
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+
+            .box {
+                width: 20rem;
+                background: #222;
+                text-align: center;
+                padding: 2rem;
+                margin: 2rem;
+
+                span {
+                    font-size: 4rem;
+                    color: var(--memory);
+                }
+                h3 {
+                    font-size: 2rem;
+                    color: #fff;
+                }
+            }
         }
     }
 }
+
+.education {
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        padding-left: 3rem;
+
+        .box {
+            width: 27rem;
+            margin: 4rem 1rem;
+            padding-left: 4rem;
+            border-left: .2rem solid #fff;
+            position: relative;
+
+            span {
+                font-size: 1.3rem;
+                background: #222;
+                color: #fff;
+                border-radius: 5rem;
+                padding: .5rem 2.5rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: #fff;
+                padding-top: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #eee;
+                padding: 1rem 0;
+            }
+
+            i {
+                position: absolute;
+                top: -1.5rem;
+                left: -2.5rem;
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50%;
+                line-height: 5rem;
+                text-align: center;
+                font-size: 2rem;
+                color: #fff;
+                background: var(--memory);
+            }
+
+        }
+    }
+}
+
+.portfolio {
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+
+        .box {
+            height: 20rem;
+            width: 26rem;
+            border-radius: 1rem;
+            margin: 2rem;
+            overflow: hidden;
+            cursor: pointer;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit:cover;
+            }
+
+            &:hover img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+.contact {
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .content {
+            flex: 1 1 30rem;
+            padding: 4rem;
+            padding-bottom: 0;
+
+            .title {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 3rem;
+            }
+
+            .info h3 {
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+                color: #eee;
+                padding: 1rem;
+                font-weight: normal;
+
+                i {
+                    padding-right: 1rem;
+                    color: var(--memory);
+                }
+            }
+        }
+
+        form {
+            flex: 1 1 45rem;
+            padding: 2rem;
+            margin: 2rem;
+            margin-bottom: 4rem;
+
+            .box {
+                padding: 1.5rem;
+                margin: 1rem 0;
+                background: #3333;
+                color: #fff;
+                transform: none;
+                font-size: 1.7rem;
+                width: 100%;
+
+                &::placeholder{
+                    text-transform: capitalize;
+                }
+            }
+
+            .message {
+                height: 15rem;
+                resize: none;
+            }
+        }
+    }
+}
+
+.top {
+
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 100;
+    display: none;
+    
+}
+
 
 // media queries
 
@@ -241,4 +426,29 @@ header {
     header {
         width: 100vw;
     }
+
+    .heading {
+        margin: 0 3rem;
+    }
+
+    .about .row .counter .box {
+        width: 100%;
+    }
+
+    .education .box-container .box {
+        width: 100%;
+    }
+
+    .portfolio .box-container .box {
+        width: 100%;
+    }
+
+    .contact .row form {
+        margin: 2rem 0;
+    }
+}
+
+// correct email to be default case
+h3.mail {
+        text-transform: none;
 }
