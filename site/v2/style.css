@@ -397,6 +397,6 @@ header .navbar ul li a:hover {
     margin: 2rem 0;
   }
 }
-h3.mail {
+h3.mail, .git {
   text-transform: none;
 }/*# sourceMappingURL=style.css.map */
